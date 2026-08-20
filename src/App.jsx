@@ -907,7 +907,6 @@ const formInquiryOptions = [
 ];
 
 const gradeOptions = [
-  { value: '', labelKey: 'formSelectGrade' },
   { value: 'pre-primary', labelKey: 'formPrePrimary' },
   { value: 'primary', labelKey: 'formPrimary' },
   { value: 'middle', labelKey: 'formMiddle' },
@@ -1372,7 +1371,7 @@ function App() {
               <div className="why-choose-text">
                 <p>{t('whyChooseText')}</p>
                 <ul>
-                  {['whyChoosePoint1', 'whyChoosePoint2', 'whyChoosePoint3', 'whyChoosePoint4', 'whyChoosePoint5', 'whyChoosePoint6', 'whyChoosePoint7', 'whyChoosePoint8'].map((key) => (
+                  {['whyChoosePoint1', 'whyChoosePoint2', 'whyChoosePoint3', 'whyChoosePoint4', 'whyChoosePoint5', 'whyChoosePoint6', 'whyChoosePoint7', 'whyChoosePoint8', 'whyChoosePoint9'].map((key) => (
                     <li key={key}>{t(key)}</li>
                   ))}
                 </ul>
