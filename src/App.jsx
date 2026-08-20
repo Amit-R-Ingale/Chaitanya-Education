@@ -251,8 +251,7 @@ const translations = {
     whyChoosePoint4: "State Board curriculum with modern teaching methods",
     whyChoosePoint5: "Hygienic Hostel facility and food facilities.",
     whyChoosePoint6: "10+ school buses for transportation of students.",
-    whyChoosePoint6: "Safe, secure, and nurturing learning environment",
-    whyChoosePoint7: "10+ school buses for transportation of students.",
+    whyChoosePoint7: "Safe, secure, and nurturing learning environment",
     whyChoosePoint8: "Competitive exam coaching from early grades",
     whyChoosePoint9: "Hands-on ITI vocational training and practical skills",
     whyChooseText: "Chaitanya Education Institute has been a cornerstone of quality education in Mudalgi since 1997. We offer comprehensive education in both English and Kannada mediums from LKG to 10th Standard, along with ITI vocational training programs, focusing on holistic development, character building, and academic excellence.",
@@ -899,7 +898,6 @@ const galleryTabs = [
 ];
 
 const formInquiryOptions = [
-  { value: '', labelKey: 'formSelectOption' },
   { value: 'admission', labelKey: 'formAdmissionInquiry' },
   { value: 'fees', labelKey: 'formFeesInquiry' },
   { value: 'curriculum', labelKey: 'formCurriculumInquiry' },

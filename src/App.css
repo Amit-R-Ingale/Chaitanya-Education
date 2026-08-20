@@ -939,6 +939,12 @@ img {
   margin-bottom: 1rem;
 }
 
+.card-content {
+  padding: 1.5rem;
+  box-sizing: border-box;
+  width: 100%;
+}
+
 .event-link {
   color: var(--primary);
   text-decoration: none;
