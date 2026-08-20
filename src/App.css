@@ -119,23 +119,6 @@ img {
   gap: 1rem;
 }
 
-  /* Mobile tweaks for header logo sizing */
-  .brand-logo img {
-    width: 52px;
-    height: 52px;
-  }
-
-  .logo h2 {
-    font-size: 1.05rem;
-    margin: 0;
-    line-height: 1;
-  }
-
-  .affiliation {
-    font-size: 0.78rem;
-    color: var(--muted);
-  }
-
 .logo:hover {
   color: var(--accent);
   transform: scale(1.05);
@@ -1437,24 +1420,6 @@ img {
 }
 
 @media (max-width: 900px) {
-  /* Keep the contact section single-column on smaller screens so the form
-     can use the full available width. */
-  .contact-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .contact-form {
-    width: 100%;
-  }
-
-  .contact-form label,
-  .contact-form input,
-  .contact-form textarea,
-  .contact-form select {
-    width: 100%;
-    max-width: 100%;
-  }
-
   .top-bar .container {
     flex-direction: column;
     align-items: center;
@@ -1467,19 +1432,12 @@ img {
   }
 
   .header-inner {
-    /* Keep header compact on small screens */
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    gap: 0.5rem;
-    padding: 0.35rem 0;
+    flex-direction: column;
+    gap: 1rem;
   }
 
   .logo-section {
-    text-align: left;
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
+    text-align: center;
   }
 
   .main-nav {
@@ -1521,6 +1479,24 @@ img {
     gap: 2rem;
   }
 
+  /* Keep the contact section single-column on smaller screens so the form
+     can use the full available width. */
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-form {
+    width: 100%;
+  }
+
+  .contact-form label,
+  .contact-form input,
+  .contact-form textarea,
+  .contact-form select {
+    width: 100%;
+    max-width: 100%;
+  }
+
   .why-choose-text {
     padding-right: 0;
   }
@@ -1559,6 +1535,20 @@ img {
 }
 
 @media (max-width: 600px) {
+  /* Show exactly one slider card at a time on mobile.
+     The next card becomes visible only after swiping left/right. */
+  .wins-grid .win-item,
+  .leadership-grid .leadership-card,
+  .events-grid .event-card,
+  .academics-grid .academic-card,
+  .news-grid .news-card {
+    flex: 0 0 100%;
+    width: 100%;
+    min-width: 100%;
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
+  }
+
   .hero {
     padding-top: 3rem;
   }
